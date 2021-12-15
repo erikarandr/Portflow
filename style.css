@@ -11,15 +11,24 @@ body{
 
 }
 
+header{
+    background-color:white;
+    height:10vh;
+    width: 100%;
+   
+   
+}
+
 .section-menu{
     display:flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:center;
 }
 
 .title{
     font-weight: bold;
     font-size: 40px;
+   
 }
 
 .list{
@@ -28,6 +37,12 @@ body{
     width: 552px;
     list-style: none;
     font-size: 18px;
+}
+
+@media (max-width:768px){
+    .list{
+        display:none;
+    }
 }
 
 a{
@@ -54,6 +69,12 @@ label{
     width: 30px;
 }
 
+@media (max-width:768px){
+    label{
+        display:block;
+    }
+}
+
 label span{
     position: absolute;
     display: block;
@@ -65,18 +86,21 @@ label span{
 }
 
 .image-id{
-    background-image:url("https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:13ead2e1-3ac9-44a1-b4cb-14736da07bb0;revision=0?component_id=90838487-a7fa-4a2c-8cf4-a4748238ac5c&api_key=CometServer1&access_token=1638867458_urn%3Aaaid%3Asc%3AUS%3A13ead2e1-3ac9-44a1-b4cb-14736da07bb0%3Bpublic_8e1808d5c75f464a43a2d694e79a78d4af67001f");
+    background-image:url("https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:13ead2e1-3ac9-44a1-b4cb-14736da07bb0;revision=0?component_id=90838487-a7fa-4a2c-8cf4-a4748238ac5c&api_key=CometServer1&access_token=1639559758_urn%3Aaaid%3Asc%3AUS%3A13ead2e1-3ac9-44a1-b4cb-14736da07bb0%3Bpublic_c1f625ec94fdd5345ca68aabf4d76030c22446ee");
     background-repeat: no-repeat;
     background-size: cover;
     height: 680px;
-    background-position-x: 84%;
+    background-position: fixed;
 }
 
 .container-laranja{
     display: flex;
     align-items: center;
     height: 100%;
-    margin-left: 3vw;
+    margin-left: 9vw;
+    color:white;
+    font-size:40px;
+ 
 }
 
 .h2{
@@ -159,6 +183,56 @@ h6{
     padding-left: 3rem;
     color:black;
 }
+@media (max-width:768px){
+    footer{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #fff;
+        height:auto;
+        margin-top:8%;
+    }
+}
+@media (max-width:768px){
+    .rodape{
+        background-color:gray;
+        display:flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        align-items: center;
+        width:100%;
+        height:auto;
+    }
+}
+@media (max-width:768px){
+    .rodape-final{
+        display:flex;
+        flex-wrap:wrap;
+        height:auto;
+        padding-top:2vh;
+    }
+}
+
+
+@media (max-width:768px){
+    .box-footer{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        padding-left:3vh;
+    }
+}
+@media (max-width:768px){
+    .texto-rodape{
+        width:418px;
+        display: flex;
+        justify-content:center;
+        margin-top:0%;
+        padding-left: 0%;
+        flex-wrap:wrap;
+
+    }
+
 .btn{
     display:flex;
     justify-content: center;
